@@ -2,6 +2,8 @@
 
 A Laravel 12 application that provides a RESTful API for managing job listings with complex filtering capabilities similar to Airtable. The application handles different job types with varying attributes using Entity-Attribute-Value (EAV) design patterns alongside traditional relational database models.
 
+**Repository**: [https://github.com/A-Moussa0/job-board-poc](https://github.com/A-Moussa0/job-board-poc)
+
 ## Table of Contents
 
 - [Requirements](#requirements)
@@ -28,8 +30,8 @@ A Laravel 12 application that provides a RESTful API for managing job listings w
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/job-board-api.git
-   cd job-board-api
+   git clone https://github.com/A-Moussa0/job-board-poc.git
+   cd job-board-poc
    ```
 
 2. Set up environment:
