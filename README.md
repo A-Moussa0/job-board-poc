@@ -7,6 +7,7 @@ A Laravel 11 application that provides a RESTful API for managing job listings w
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Database Structure](#database-structure)
+- [API Documentation](#api-documentation)
 - [API Endpoints](#api-endpoints)
 - [Filtering Syntax](#filtering-syntax)
   - [Basic Field Filtering](#basic-field-filtering)
@@ -46,6 +47,11 @@ A Laravel 11 application that provides a RESTful API for managing job listings w
    ./vendor/bin/sail artisan migrate --seed
    ```
 
+5. Generate API documentation:
+   ```
+   ./vendor/bin/sail artisan l5-swagger:generate
+   ```
+
 ## Database Structure
 
 The database consists of the following main tables:
@@ -61,6 +67,16 @@ Pivot tables:
 - **job_language**: Many-to-many between jobs and languages
 - **job_category**: Many-to-many between jobs and categories
 - **job_location**: Many-to-many between jobs and locations
+
+## API Documentation
+
+The API is documented using Swagger/OpenAPI. You can access the interactive documentation at:
+
+```
+http://localhost/api/documentation
+```
+
+This provides a complete reference of all endpoints, request parameters, and response formats with the ability to try out API calls directly from the browser.
 
 ## API Endpoints
 
@@ -256,3 +272,4 @@ status = published AND company_name = "Acme Inc" AND attribute:Requires Certific
 - Implements advanced filter parser for building dynamic Eloquent queries
 - Optimized database schema with proper indexing
 - Handles nested AND/OR conditions with parentheses grouping
+- API documented with Swagger/OpenAPI
