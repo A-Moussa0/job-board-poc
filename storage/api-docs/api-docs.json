@@ -114,6 +114,10 @@
                                         "message": {
                                             "type": "string",
                                             "example": "Invalid condition format"
+                                        },
+                                        "status_code": {
+                                            "type": "integer",
+                                            "example": 400
                                         }
                                     },
                                     "type": "object"
@@ -167,7 +171,15 @@
                                     "properties": {
                                         "message": {
                                             "type": "string",
-                                            "example": "Not found."
+                                            "example": "Record not found."
+                                        },
+                                        "error": {
+                                            "type": "string",
+                                            "example": "Not Found"
+                                        },
+                                        "status_code": {
+                                            "type": "integer",
+                                            "example": 404
                                         }
                                     },
                                     "type": "object"

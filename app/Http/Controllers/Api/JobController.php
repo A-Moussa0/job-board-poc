@@ -102,7 +102,8 @@ class JobController extends Controller
      *         @OA\JsonContent(
      *             type="object",
      *             @OA\Property(property="error", type="string", example="Filter Error"),
-     *             @OA\Property(property="message", type="string", example="Invalid condition format")
+     *             @OA\Property(property="message", type="string", example="Invalid condition format"),
+     *             @OA\Property(property="status_code", type="integer", example=400)
      *         )
      *     )
      * )
@@ -154,6 +155,7 @@ class JobController extends Controller
             return response()->json([
                 'error' => 'Filter Error',
                 'message' => $e->getMessage(),
+                'status_code' => 400
             ], 400);
         }
     }
@@ -187,7 +189,9 @@ class JobController extends Controller
      *         description="Job not found",
      *         @OA\JsonContent(
      *             type="object",
-     *             @OA\Property(property="message", type="string", example="Not found.")
+     *             @OA\Property(property="message", type="string", example="Record not found."),
+     *             @OA\Property(property="error", type="string", example="Not Found"),
+     *             @OA\Property(property="status_code", type="integer", example=404)
      *         )
      *     )
      * )
