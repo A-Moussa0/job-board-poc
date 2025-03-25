@@ -1,6 +1,6 @@
 # Job Board API with Advanced Filtering
 
-A Laravel 11 application that provides a RESTful API for managing job listings with complex filtering capabilities similar to Airtable. The application handles different job types with varying attributes using Entity-Attribute-Value (EAV) design patterns alongside traditional relational database models.
+A Laravel 12 application that provides a RESTful API for managing job listings with complex filtering capabilities similar to Airtable. The application handles different job types with varying attributes using Entity-Attribute-Value (EAV) design patterns alongside traditional relational database models.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ A Laravel 11 application that provides a RESTful API for managing job listings w
 ## Requirements
 
 - PHP 8.2+
-- Laravel 11
+- Laravel 12
 - MySQL 8.0+
 - Docker (for Laravel Sail)
 
